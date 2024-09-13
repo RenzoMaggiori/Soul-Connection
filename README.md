@@ -159,11 +159,21 @@ AUTH=<boolean>
 >
 > Ensure you replace the placeholders (`<user>`, `<password>`, `<url>`, etc.) with your actual configuration values. Proper setup of these environment variables is essential for the application to function correctly.
 
-# Authors
+# 🚀 Usage
+
+1. Check both `.env` files are properly configured with the necesary information. Refer to the [Environment Variables](#-environment-variables) section for details.
+2. Ensure **Docker** is up and running. For installation instructions, see the [Docker Installation](#install-docker) section.
+3. Check if the frontend is correctly set up by viewing the logs:
+
+    ``` bash
+    docker compose logs frontend
+    ```
+
+# 📜 License
+
+Copyright 2024 Soul Connection. All rights reserved. The terms are specified in the [LICENSE](/LICENSE)
+
+# 👥 Authors
 
 | [<img src="https://github.com/RenzoMaggiori.png?size=85" width=85><br><sub>Renzo Maggiori</sub>](https://github.com/RenzoMaggiori) | [<img src="https://github.com/oriollinan.png?size=85" width=85><br><sub>Oriol Liñan</sub>](https://github.com/oriollinan) | [<img src="https://github.com/AlbaCande.png?size=85" width=85><br><sub>Alba Candelario</sub>](https://github.com/AlbaCande) | [<img src="https://github.com/G0nzal0zz.png?size=85" width=85><br><sub>Gonzalo Larroya</sub>](https://github.com/G0nzal0zz) 
 |:---:|:---:|:---:|:---:|
-
-<br/>
-
-Copyright 2024 Soul Connection. All rights reserved. The license is [here](/LICENSE)
