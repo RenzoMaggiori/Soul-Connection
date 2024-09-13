@@ -116,6 +116,45 @@ For the **Docker**, you can download it [here](https://go.dev/doc/install) direc
 >
 > The migration will not function if the Soul Connection **API** is unavailable.
 
+# 🌐 Environment Variables
+
+To configure the environment, you need two `.env` files: one for the **frontend** and one for the **backend**. Place each file at the root of its respective directory.
+
+**Backend environment variables**
+
+Create a `.env` file in the backend directory with the following variables:
+
+``` env
+POSTGRES_USER=<user>
+POSTGRES_PASSWORD=<password>
+POSTGRES_DB=<db-name>
+POSTGRES_HOST=<host>
+POSTGRES_PORT=<db-port>
+
+MONGO_USER=<user>
+MONGO_PASSWORD=<password>
+MONGO_HOST=<host>
+MONGO_PORT=<db-port>
+
+API_KEY=<key>
+API_EMAIL=<email>
+API_PASSWORD=<password>
+
+WEB_URL=<url>
+```
+
+**Frontend environment variables**
+
+Create a `.env` file in the frontend directory with the following variables:
+
+``` env
+SECRET=<secret>
+NEXT_PUBLIC_API_URL=<url>
+AUTH=<boolean>
+```
+> [!Important]
+>
+> Ensure you replace the placeholders (`<user>`, `<password>`, `<url>`, etc.) with your actual configuration values. Proper setup of these environment variables is essential for the application to function correctly.
 
 # Authors
 
