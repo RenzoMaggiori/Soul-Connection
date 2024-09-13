@@ -101,17 +101,20 @@ For the **Docker**, you can download it [here](https://go.dev/doc/install) direc
     ``` bash
     ./scripts/launch.sh
     ```
-    When the **API** is running you can check it by using `docker compose logs api` and you should see something like this
 
+    To verify that the **API** is running, use the command `docker compose logs api`, if the **API** is running correctly, you should see an output similar to the following:
     <p align="center">
     <img alt="terminal" src="/frontend/public/teminal.png">
     </p>
-
 3. **After the API is running start the migration**
 
     ``` bash
     docker compose start migration
     ```
+
+> [!Important]
+>
+> The migration will not function if the Soul Connection **API** is unavailable.
 
 
 # Authors
