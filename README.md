@@ -142,6 +142,7 @@ API_PASSWORD=<password>
 
 WEB_URL=<url>
 ```
+> For a reference on where to place the `.env` file and how to set it up, see the [example file](/backend/.env.example).
 
 **Frontend environment variables**
 
@@ -152,6 +153,8 @@ SECRET=<secret>
 NEXT_PUBLIC_API_URL=<url>
 AUTH=<boolean>
 ```
+> For a reference on where to place the `.env` file and how to set it up, see the [example file](/frontend/.env.example).
+
 > [!Important]
 >
 > Ensure you replace the placeholders (`<user>`, `<password>`, `<url>`, etc.) with your actual configuration values. Proper setup of these environment variables is essential for the application to function correctly.
