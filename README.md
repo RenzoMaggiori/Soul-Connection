@@ -24,9 +24,9 @@ This project is aimed at migrating an existing [API](https://soul-connection.fr/
 
 
 
-# ⚙️ Installation
+# 📖 Getting Started
 
-## Prerequisites
+## 📝 Prerequisites
 
 #### Install Go
 For the installation, you can [download](https://go.dev/doc/install) **Go** directly or use the command line:
@@ -88,6 +88,30 @@ For the **Docker**, you can download it [here](https://go.dev/doc/install) direc
     npm -v
     ```
 
+## ⚙️ Installation
+
+1. **Clone the Repository**
+
+    ``` bash
+    git clone https://github.com/RenzoMaggiori/Soul-Connection.git
+    cd Soul-Connection/backend
+    ```
+2. **From the backend folder run the launch script**
+
+    ``` bash
+    ./scripts/launch.sh
+    ```
+3. **After the API is running start the migration**
+
+    ``` bash
+    docker compose start migration
+    ```
+
+
+# Authors
+
+| [<img src="https://github.com/RenzoMaggiori.png?size=85" width=85><br><sub>Renzo Maggiori</sub>](https://github.com/RenzoMaggiori) | [<img src="https://github.com/oriollinan.png?size=85" width=85><br><sub>Oriol Liñan</sub>](https://github.com/oriollinan) | [<img src="https://github.com/AlbaCande.png?size=85" width=85><br><sub>Alba Candelario</sub>](https://github.com/AlbaCande) | [<img src="https://github.com/G0nzal0zz.png?size=85" width=85><br><sub>Gonzalo Larroya</sub>](https://github.com/G0nzal0zz) 
+|:---:|:---:|:---:|:---:|
 
 <br/>
 
