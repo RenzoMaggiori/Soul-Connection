@@ -162,7 +162,7 @@ AUTH=<boolean>
 # 🚀 Usage
 
 1. Check both `.env` files are properly configured with the necesary information. Refer to the [Environment Variables](#-environment-variables) section for details.
-2. Ensure **Docker** is up and running. For installation instructions, see the [Docker Installation](#install-docker) section.
+2. Ensure **Docker** is up and running. For installation instructions, see the [Installation](#-installation) section.
 3. Check if the frontend is correctly set up by viewing the logs:
 
     ``` bash
