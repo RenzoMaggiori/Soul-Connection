@@ -169,6 +169,11 @@ AUTH=<boolean>
     docker compose logs frontend
     ```
 
+    if the **Frontend** is running correctly, you should see an output showing the url similar to the following:
+    <p align="center">
+    <img alt="terminal" src="/frontend/public/docker_front.png">
+    </p>
+
 # 📜 License
 
 Copyright 2024 Soul Connection. All rights reserved. The terms are specified in the [LICENSE](/LICENSE)
