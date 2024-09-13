@@ -28,15 +28,65 @@ This project is aimed at migrating an existing [API](https://soul-connection.fr/
 
 ## Prerequisites
 
-For the installation you will need to [download](https://go.dev/doc/install) **Go**.
+#### Install Go
+For the installation, you can [download](https://go.dev/doc/install) **Go** directly or use the command line:
+
+1. Download and Install Go:
+
+    ``` bash
+    curl -LO https://go.dev/dl/go1.22.linux-amd64.tar.gz
+
+    sudo tar -C /usr/local -xzf go1.22.linux-amd64.tar.gz
+  
+    echo "export PATH=\$PATH:/usr/local/go/bin" >> ~/.bashrc
+    source ~/.bashrc
+  
+    go version
+    ```
 
 > [!Note]
 >
-> You van also install it using `sudo apt install golang-go`
+> You can also install it using `sudo apt install golang-go`, but this may not always get the latest version.
 
-- [Node.js](https://nodejs.org/en/download/package-manager)
-- [Docker](https://docs.docker.com/get-started/get-docker/)
-- [Go `v1.22`](https://go.dev/doc/install)
+#### Install Docker
+For the **Docker**, you can download it [here](https://go.dev/doc/install) directly or use the command line:
+
+1. Download and Install Docker:
+
+    ``` bash
+    sudo apt update
+    sudo apt install -y ca-certificates curl gnupg
+    
+    sudo install -m 0755 -d /etc/apt/keyrings
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    
+    echo \
+      "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+      $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    
+    sudo apt update
+    sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+    
+    docker --version
+    ```
+
+#### Install Node.js and npm
+
+1. Install Node.js:
+
+    ``` bash
+    sudo apt install -y nodejs
+    
+    node -v
+    ```
+
+2. Install npm (if not automatically installed with Node.js):
+   
+    ``` bash
+    sudo apt install -y npm
+    
+    npm -v
+    ```
 
 
 <br/>
