@@ -5,13 +5,27 @@
 ---
 
 <p align="center">
+  <a href="https://www.typescriptlang.org/docs/">
   <img alt="Typescript" src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=2F73BF">
+  </a>
+  <a href="https://nextjs.org/docs">
   <img alt="NextJs" src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white">
+  </a>
+  <a href="https://react.dev/">
   <img alt="React" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB">
+  </a>
+  <a href="https://go.dev/doc/">
   <img alt="Go" src="https://img.shields.io/badge/-Go-black?style=for-the-badge&logo=go&logoColor=white&color=2F73BF">
+  </a>
+  <a href="https://docs.docker.com/">
   <img alt="Docker" src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white">
+  </a>
+  <a href="https://www.postgresql.org/docs/">
   <img alt="Postgres" src="https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white">
+  </a>
+  <a href="https://www.mongodb.com/docs/">
   <img alt="Mongoose" src="https://img.shields.io/badge/-MongoDB-black?style=for-the-badge&logoColor=white&logo=mongodb&color=127237">
+  </a>
 </p>
 
 <!-- [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/RenzoMaggiori/Soul-Connection/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/aimeos/Soul-Connection/?branch=master) -->
