@@ -1,0 +1,77 @@
+.cards {
+  display: grid;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+/* Responsive grid for different screen sizes */
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+  }
+}
+
+@media (max-width: 599px) {
+  .cards {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+}
+
+.card {
+  background: #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.toggle-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  background-color: #005f8a;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding: 40px;
+  background: #222232;
+}
+
+/* Separation mode */
+.cards--separated .card {
+  transform: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}

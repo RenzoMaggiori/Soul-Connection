@@ -1,0 +1,81 @@
+services:
+  db:
+    build:
+      context: ./db/
+      dockerfile: ./../dockerfiles/db.Dockerfile
+    container_name: postgres-instance
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - backend
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+
+  file-storage:
+    image: mongo:latest
+    container_name: mongo-instance
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - backend
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD}
+
+  api:
+    build:
+      context: .
+      dockerfile: ./dockerfiles/api.Dockerfile
+    container_name: api-instance
+    ports:
+      - "8000:8000"
+    networks:
+      - backend
+    depends_on:
+      - db
+      - file-storage
+
+  migration:
+    build:
+      context: .
+      dockerfile: ./dockerfiles/migration.Dockerfile
+    container_name: migration-instance
+    networks:
+      - backend
+    depends_on:
+      - db
+      - file-storage
+
+  frontend:
+    container_name: frontend-container
+    build:
+      context: ../frontend/
+      target: dev
+      dockerfile: Dockerfile
+    volumes:
+        - ../frontend:/app
+        - /app/node_modules
+        - /app/.next
+    ports:
+      - "3000:3000"
+    networks:
+      - backend
+    environment:
+      - NEXT_PUBLIC_API_URL=http://api:8000
+
+
+volumes:
+  postgres-data:
+    driver: local
+  mongo-data:
+    driver: local
+
+networks:
+  backend:
+    driver: bridge

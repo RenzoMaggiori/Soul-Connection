@@ -1,0 +1,20 @@
+services:
+  frontend:
+    container_name: frontend-container
+    build:
+      context: ./
+      target: dev
+      dockerfile: Dockerfile
+    volumes:
+        - .:/app
+        - /app/node_modules
+        - /app/.next
+    ports:
+      - "3000:3000"
+    networks:
+      - frontend-backend
+
+networks:
+  frontend:
+  external:
+    name: backend
