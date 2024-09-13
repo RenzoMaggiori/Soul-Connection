@@ -168,8 +168,7 @@ AUTH=<boolean>
     ``` bash
     docker compose logs frontend
     ```
-
-    if the **Frontend** is running correctly, you should see an output showing the url similar to the following:
+4. If the **Frontend** is running correctly, you should see an output showing the url similar to the following:
     <p align="center">
     <img alt="terminal" src="/frontend/public/docker_front.png">
     </p>
